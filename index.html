@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js"></script>
+    <title id="cabecera">Encriptador de Texto</title>
+</head>
+<body>
+     
+    
+       
+    <main>
+        <div class="contenedor">
+            <div   class="lad-izquierdo"> 
+                <div ><h1 class="logo"><img src="./imagenes/logo.svg" alt="Logo encriptador">  </h1> </div>    
+                <div class="ingreso"> 
+                    <div></div>
+                        <div><textarea id="textotrabajo" class="input-texto" pattern="[a-z]" rows=3 cols=30 required placeholder="Ingrese el texto aquí"></textarea></div>
+                    </div> 
+
+                    <div class="grid-botones">
+
+                        <div class="lista-min">
+                            <ul class="contenido-lista" >
+                                <li class="items"><img src="/imagenes/admiracion.png">  Solo letras minusculas y sin acentos</li>
+                            </ul>
+                            
+                        </div>
+                        
+                    
+                        
+                        <div class="botones">
+                            <button class="bencriptar" onclick="encriptar()">Encriptar</button>
+                            
+                            <button class="bdesencriptar" onclick="desencriptar()">Desencriptar</button>
+
+                        </div>
+                    </div>
+                
+            </div>
+            
+            <div class="lad-derecho" id="lad-derecho">
+                <div class="contenedor-marco" id="contenedor-marco">
+                    
+                    <!--<div id="cajatextodiv"><textarea id="cajatexto"class="cajatexto"  rows=3 cols=20 readonly="readonly"></textarea></div>-->
+                    <div contentnoeditable class="cajatexto" id="cajatexto"></div>
+                    <div id="muneco"  class="muneco"><img src="/imagenes/Muneco.svg"></div>
+                    <div id="mensaje" class="mensaje"><h3>Ningun mensaje fue encontrado</h3></div>
+                    <div id="ingreso-texto"  class="ingrese-texto"><p>Ingresa el texto que deseas encriptar o desencriptar</p></div>
+                    <div id="copiarId" class= "copiarId" > <button class="copiar" onclick="copiar()">Copiar</button> </div>
+                    
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

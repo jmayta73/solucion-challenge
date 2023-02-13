@@ -1,0 +1,380 @@
+.logo{
+    position: relative;
+    left: 70px;
+    top: 30px;
+  
+    width: 100px;
+   
+  }
+  body{
+    background: #F3F5FC;
+    width: 90%;
+    height: 100%;
+  
+  }
+  .contenedor{
+   
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+  
+    height: 800px;
+    gap: 20px;
+ 
+    width: 90%;
+  }
+  
+  .lad-izquierdo{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    
+    height: 750px;
+    width: auto;
+    gap: 20px;
+    
+    margin-left: 20px;
+  
+  }   
+  .ingreso{
+    
+    
+    margin-top: 90px;
+    margin-left: 140px;
+    border: none;
+  
+  }
+  .input-texto{
+    display: grid;
+    
+    padding: 10px 20px;
+    width: 400px;
+    height: 300px;
+    font-size: 32px;
+    color: #0A3871;
+    background: #F3F5FC;
+    border:none;
+   outline: none;  
+    text-transform:lowercase; 
+    
+  }
+  .input-texto on
+  ::placeholder{
+    color: #0A3871;
+  }
+  
+  
+  
+  .grid-botones{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+    position: relative;
+    width: auto;
+    height: 75px;
+       
+  }
+  .botones{
+    display:inline-block;
+    
+    padding: 20px;
+  
+    
+    
+  }
+  .bencriptar{
+    
+    width: 328px;
+    height: 67px;
+    color:white;
+    font-size: 24px;
+  
+    background: #0A3871;
+    border-radius: 24px;
+  
+    order: 0;
+    cursor: pointer;
+  
+  }
+  .bencriptar:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+  
+    
+  
+  }
+  
+  
+  
+  .bdesencriptar{
+    width: 328px;
+    height: 67px;
+    color:    #0A3871;
+    font-size: 24px;
+  
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    order: 1;
+    cursor: pointer;
+  }
+  
+  .lad-derecho{    
+    /* display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px; */
+  
+    width: auto;
+    height: 750px;
+    
+  
+  }
+  .contenedor-marco{
+    width: auto;
+    height: 730px;
+   
+    border-radius: 25px;    
+    box-shadow: 0px 24px 32px 20px rgba(0, 0, 0, 0.08); 
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 2fr 1fr 1fr minmax(100px, 200px);
+    
+    
+  }
+  /*#cajatextodiv{
+    display: grid;
+    
+    padding: 10px 20px;
+    width: auto;
+    height: 200px;
+     
+    display: none;
+  }
+
+
+  .cajatexto{
+    font-size: 32px;
+    color: #0A3871;
+    background: white;
+    border:none;
+    outline: none;
+    resize: none;
+      
+  }
+  */
+
+  .cajatexto{
+    border: none;
+    width: auto;
+    padding: .5rem;
+    min-height: 200px;
+    font-size: 32px;
+    color: #0A3871;
+    background: white;
+    border:none;
+    outline: none;
+    resize: none;
+    max-width: 500px;
+    max-height: 600px;
+    display: none;
+    
+  }
+
+
+  .muneco{
+    width: auto;
+    height: auto;
+    margin-top: 100px;
+    /*margin-bottom: 150px;*/
+    
+  }
+  .mensaje{
+  
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    width: auto;
+    height: 30px;
+    
+    padding: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #343A40;
+    
+    
+  }
+  .ingrese-texto{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: #495057;
+    width: auto;
+    height: 30px;
+    font-weight: bold;
+    
+   
+  
+    
+    text-align: center;
+  
+  }
+  .copiarId{
+   
+    display: flex;
+    justify-content: center;
+    
+    align-items: end;
+    height: 180px;
+    display: none;
+    
+    position: absolute;
+    left: 800px;
+    bottom: 190px;
+    
+    
+    
+  }
+  .copiar{
+    width: 328px;
+    height: 67px;
+    color:    #0A3871;
+    font-size: 24px;
+  
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    order: 1;
+    cursor: pointer;
+    
+    position: relative;
+   
+    left: auto;
+    right: auto;
+    
+   
+    
+  }
+  @media screen and (max-width:750px){
+    .contenedor{
+        width: 750px;
+    }
+
+    .lad-izquierdo{
+    
+        justify-items: center;
+        height: 650px;
+
+      }
+    .lad-derecho{
+
+        
+        height: 500px;
+        
+        width: -webkit-fill-available;
+        margin-left: 20px;
+       
+    }
+    .contenedor-marco{
+        width: auto;
+        height: 300px;
+       
+        
+      }
+      .muneco{
+        display: none;
+     }
+     .copiarId{
+        position: relative;
+        height: 50px;
+        align-self: center
+        
+      }
+      
+    
+  }
+  @media screen and (max-width:450px){
+    
+     .contenedor{
+        width: auto;
+        height: 1720px;
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        left: 16px;
+        top: 24px;
+        width: 32px;
+    }
+    .lad-izquierdo{
+    
+        justify-items: center;
+        height: 730px;
+        margin-left: auto;
+        margin-right: auto;
+        
+      }
+      .ingreso{
+        margin-left: 5px;
+      }
+      .input-texto{
+        width: auto;
+        padding: 0px;
+        font-size: 24px;
+      }
+      .grid-botones{
+        display: grid;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        
+        position: relative;
+        width: auto;
+        height: 75px;
+        
+        
+           
+      }
+      .botones{
+        text-align: -webkit-center;
+      }
+
+    .lad-derecho{
+
+        
+        height: 500px;
+        
+        width: -webkit-fill-available;
+        margin-left: 0px;
+       
+    }
+    .contenedor-marco{
+        width: auto;
+        height: auto;
+       margin-left: 10px;
+       margin-right: 10px;
+       display: flex;
+       flex-direction: column;   
+       justify-content: space-evenly;
+      }
+      .muneco{
+        display: none;
+     }
+     
+     .copiarId{
+   
+        height: 50px;
+        align-self: center;
+        position: relative;
+        left: auto;
+        right: auto;
+        
+      }
+      .cajatexto{
+        font-size: 24px;
+      }
+      
+    
+  }
+    
