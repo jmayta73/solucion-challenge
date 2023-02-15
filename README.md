@@ -4,7 +4,7 @@
 _El reto consiste en crear una página web que cifre y descifre el texto que será ingresado por el usuario y mostrarlo en su forma cifrada o descifrada. El objetivo de este reto es evaluar los conocimientos adquiridos durante el curso "Principiante en programación"._
 
 
-##  👉[Mira el proyecto aquí](https://jeffersond-art.github.io/one-challenge-encriptador-texto/)👈
+##  👉[Mira el proyecto aquí](https://jmayta73.github.io/solucion-challenge/)👈
 
 ## 🔧 Construido con 
 
@@ -53,4 +53,4 @@ Las llaves de encriptación solicitadas son las siguientes:
 
 ## Contact
 
-linkedin - [https://www.linkedin.com/in/jefferson-david-cano-hernandez/](https://www.linkedin.com/in/jefferson-david-cano-hernandez/) 
+linkedin - [https://www.linkedin.com/in/jesusmayta/](https://www.linkedin.com/in/jesusmayta/) 
